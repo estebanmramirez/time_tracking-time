@@ -1,0 +1,8 @@
+.profile__card--options p:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.icon_elipsis:hover {
+    cursor: pointer;
+}

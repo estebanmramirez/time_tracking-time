@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+--Blue: hsl(246, 80%, 60%);
+--Light-orange: hsl(15, 100%, 70%);
+--Soft-blue: hsl(195, 74%, 62%);
+--Light-red: hsl(348, 100%, 68%);
+--Lime-green: hsl(145, 58%, 55%);
+--Violet: hsl(264, 64%, 52%);
+--Soft-orange: hsl(43, 84%, 65%);
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+--font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+}
+
+/* -------- BODY ------------*/
+
+/* ------- FIRST CARD PROFILE WITH PHOTO ----- */
+
+.profile__card {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 1em;
+    padding-top: 2em;
+}
+
+.profile__card--name{
+    background-color: var(--Blue);
+    display: flex;
+    position: relative;
+    z-index: 1;
+    border-radius: 1em;
+    height: 10em;
+    justify-content: space-evenly;
+}
+
+.profile__card--img {
+    width: 7em;
+    height: 7em;
+    transform: translateY(1.9em);
+    background-color: white;
+    border-radius: 45%;
+    border: .3em solid white;
+}
+
+.profile__card--name div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile__card--text {
+    font-family: var(--font-family);
+    color: white;
+    font-size: 1.2em;
+}
+
+.profile__card--text1{
+    font-family: var(--font-family);
+    color: white;
+    font-size: 1.8em;
+}
+
+.profile__card--options {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--Dark-blue);
+    border-radius: 1em;
+    height: 6em;
+    transform: translateY(-1em);
+}
+
+.profile__card--options p {
+    color: var(--Pale-Blue);
+    font-family: var(--font-family);
+    font-size: 1.4em;
+    padding-top: 1.7em;
+}
+
+/* ------- END CARD --------- */
+
+/* ------- FIRST CARD REPORT --------- */
+
+.section__card--1 {
+    margin: 3em auto;
+    width: 80%;
+    border-radius: 1em;
+}
+
+.section__card--img {
+    background-color: var(--Light-orange);
+    border-radius: 1em;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
+
+.section__card--reports {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--Dark-blue);
+    height: 10em;
+    border-radius: 1em;
+    position: relative;
+    z-index: 1;
+    bottom: 1.3em;
+}
+
+.section__card--reports div {
+    transform: translate(2em, 2em);
+}
+
+.section__card--text{
+    color: white;
+    font-family: var(--font-family);
+    font-size: 1.4em;
+}
+
+.section__card--number{
+    color: white;
+    font-family: var(--font-family);
+    font-size: 3em;
+    margin-top: 0.3em;
+}
+
+.icon_social {
+    width: 5.2em;
+}
+
+.icon_elipsis {
+   transform: translateX(8.3em); 
+}
+
+.section__card--text1{
+    color: var(--Pale-Blue);
+    font-family: var(--font-family);
+    font-size: 1.4em;
+    margin-top: 1.5em;
+}
+
+/* ------- COLORS CARDS -----------*/
+
+.section__card--img2 {
+    background-color: var(--Soft-blue);
+    border-radius: 1em;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
+
+.section__card--img3 {
+    background-color: var(--Light-red);
+    border-radius: 1em;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
+
+.section__card--img4 {
+    background-color: var(--Lime-green);
+    border-radius: 1em;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
+
+.section__card--img5 {
+    background-color: var(--Desaturated-blue);
+    border-radius: 1em;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
+
+.section__card--img6 {
+    background-color: var(--Soft-orange);
+    border-radius: 1em;
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0.5em;
+}
