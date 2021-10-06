@@ -6,3 +6,8 @@
 .icon_elipsis:hover {
     cursor: pointer;
 }
+
+.section__card--reports:hover {
+    cursor: pointer;
+    background-color:  hsla(234, 31%, 47%, 1);
+}

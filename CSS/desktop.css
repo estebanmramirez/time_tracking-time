@@ -23,63 +23,71 @@ html {
 }
 
 body {
-    background-color: var(--Very-dark-blue);
+    background-color: hsl(226, 43%, 10%);
 }
 
-/* -------- BODY ------------*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "box1 box2 box3 box4"
+    "box1 box5 box6 box7";
+    column-gap: 1.5em;
+    row-gap: 1.5em;
+    margin: 6em 3em;
+}
 
-/* ------- FIRST CARD PROFILE WITH PHOTO ----- */
 
+
+
+/* --------- CONTENEDORES DE LAS CARTAS ----------*/
 .profile__card {
-    margin: 0 auto;
-    width: 80%;
-    border-radius: 1em;
-    padding-top: 2em;
+    grid-area: box1;
 }
 
 .profile__card--name{
     background-color: var(--Blue);
     display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     border-radius: 1em;
-    height: 10em;
-    justify-content: space-evenly;
+    height: 30em;
+    justify-content: space-around;
+    padding-left: 2em;
 }
 
 .profile__card--img {
-    width: 7em;
-    height: 7em;
+    width: 8em;
+    height: 8em;
     transform: translateY(1.9em);
     background-color: white;
     border-radius: 45%;
     border: .3em solid white;
 }
 
-.profile__card--name div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .profile__card--text {
-    font-family: var(--font-family);
-    color: white;
-    font-size: 1.2em;
-}
-
-.profile__card--text1{
     font-family: var(--font-family);
     color: white;
     font-size: 1.8em;
 }
 
+.profile__card--text1{
+    font-family: var(--font-family);
+    width: 70%;
+    color: white;
+    font-size: 3em;
+    font-weight: 200;
+}
+
 .profile__card--options {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     background-color: var(--Dark-blue);
     border-radius: 1em;
-    height: 6em;
+    height: auto;
     transform: translateY(-1em);
 }
 
@@ -87,18 +95,12 @@ body {
     color: var(--Pale-Blue);
     font-family: var(--font-family);
     font-size: 1.4em;
-    padding-top: 1.7em;
+    padding-top: 1.4em;
+    padding-left: 2em;
+    margin-bottom: 1em;
 }
 
-/* ------- END CARD --------- */
-
-/* ------- FIRST CARD REPORT --------- */
-
-.section__card--1 {
-    margin: 3em auto;
-    width: 80%;
-    border-radius: 1em;
-}
+/* ------- BOX 2 ------- */
 
 .section__card--img {
     background-color: var(--Light-orange);
@@ -114,7 +116,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--Dark-blue);
-    height: 10em;
+    height: 16em;
     border-radius: 1em;
     position: relative;
     z-index: 1;
@@ -122,7 +124,8 @@ body {
 }
 
 .section__card--reports div {
-    transform: translate(2em, 2em);
+    transform: translate(1em, 2em);
+    padding-left: 1.5em;
 }
 
 .section__card--text{
@@ -139,27 +142,26 @@ body {
 }
 
 .icon_social {
-    width: 5.7em;
-    height: 8.3em;
-}
-
-.icon_exercises {
-    width: 6em;
-    height: 6.2em;
+    width: 5.2em;
 }
 
 .icon_elipsis {
-   transform: translateX(8.3em); 
+   transform: translateX(7.5em); 
 }
 
-.section__card--text1{
+.section__card--desktop{
     color: var(--Pale-Blue);
     font-family: var(--font-family);
     font-size: 1.4em;
     margin-top: 1.5em;
 }
 
-/* ------- COLORS CARDS -----------*/
+.section__card--text1 {
+    display: none;
+}
+
+/* ------- COLORS CARDS ----------*/
+
 
 .section__card--img2 {
     background-color: var(--Soft-blue);
@@ -211,8 +213,14 @@ body {
     padding-right: 0.5em;
 }
 
-/* -------- OTHER ----- */
+/* -------- ICONS -------- */
 
-.section__card--desktop {
-    display: none;
+.icon_exercises {
+    width: 6.5em;
+    height: 7.5em;
+}
+
+.icon_social {
+    width: 6em;
+    height: 8.3em;
 }
